@@ -7,7 +7,8 @@ export interface ITvshow {
   status: string,
   ended: number,
   summary: string, 
-  premierd: string 
+  premierd: string, 
+  language: string
   
 }
 
