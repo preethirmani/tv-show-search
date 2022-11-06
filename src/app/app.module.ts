@@ -4,10 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TvShowSearchComponent } from './tv-show-search/tv-show-search.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TvShowSearchComponent
   ],
   imports: [
     BrowserModule,
