@@ -10,13 +10,13 @@ export class ShowComponentComponent implements OnInit {
   show: ITvshow
   constructor() { 
     this.show = {
-      id: '',
+      id: 0,
       img: '',
       title: 'The Office',
-      genres: 'Comedy',
-      rating: 'Top-rated',
+      genres: [''],
+      rating: 0,
       status: 'Ended',
-      ended: '2013-05-16',
+      ended: 0,
       summary: 'This mockumentary follows the everyday lives of the manager and the employees he manages.',
       premiered: '2005-03-24',
       language: 'English'
