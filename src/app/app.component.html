@@ -1,5 +1,5 @@
 <div >
 <h1>TV Show Search</h1>
-
-<app-show-component></app-show-component>
+<app-tv-show-search (searchEvent) = doSearch($event)></app-tv-show-search>
+<app-show-component [show] = 'iTVhow' ></app-show-component>
 </div>

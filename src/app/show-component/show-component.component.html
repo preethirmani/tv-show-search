@@ -1,5 +1,5 @@
 <!--<p>show-component works!</p>-->
-<div class="row show-details-container">
+<div class="row show-details-container" *ngIf="show.id">
     <div class="col-sm-4">
         <div class="card">
             <img class="card-img img-fluid" style="height: 28rem;" [src]='show.img' alt="" />
@@ -41,4 +41,7 @@
         </div>
     </div>
  
+</div>
+<div *ngIf="!show.id">
+   
 </div>

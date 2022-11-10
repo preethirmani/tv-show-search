@@ -1,5 +1,5 @@
-import { ThrowStmt } from '@angular/compiler';
-import { Component, OnInit } from '@angular/core';
+
+import { Component, OnInit, Input } from '@angular/core';
 import { ITvshow } from '../itvshow';
 import { ShowService } from '../show.service';
 @Component({
@@ -8,9 +8,7 @@ import { ShowService } from '../show.service';
   styleUrls: ['./show-component.component.css']
 })
 export class ShowComponentComponent implements OnInit {
-  show: ITvshow
-  constructor(private showService: ShowService) { 
-    this.show = {
+  @Input() show: ITvshow = {
       id: 0,
       img: '',
       title: '',
@@ -22,11 +20,12 @@ export class ShowComponentComponent implements OnInit {
       premiered: '',
       language: ''
     }
+  constructor(private showService: ShowService) { 
+    
   }
 
   ngOnInit(): void {
-    this.showService.getShowData('Girls').
-    subscribe (data => this.show = data)
+    
   }
 
 }
