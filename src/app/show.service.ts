@@ -15,7 +15,6 @@ export class ShowService {
   }
 
     getShowData(val : any) {
-    console.log('val::' +val);
     var url = `https://api.tvmaze.com/singlesearch/shows?q=${val}`;
     console.log('URL::'+url);
    return  this.httpClient.get<IShowInfoData>(url)
@@ -35,7 +34,7 @@ export class ShowService {
         status:data.status,
         img: data.image? data.image.original:'',
         ended: data.ended,
-        premierd: data.premiered
+        premiered: data.premiered
 
       }
      
