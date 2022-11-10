@@ -1,6 +1,7 @@
 import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { ITvshow } from '../itvshow';
+import { ShowService } from '../show.service';
 @Component({
   selector: 'app-show-component',
   templateUrl: './show-component.component.html',
@@ -8,22 +9,24 @@ import { ITvshow } from '../itvshow';
 })
 export class ShowComponentComponent implements OnInit {
   show: ITvshow
-  constructor() { 
+  constructor(private showService: ShowService) { 
     this.show = {
       id: 0,
       img: '',
-      title: 'The Office',
+      title: '',
       genres: [''],
       rating: 0,
-      status: 'Ended',
+      status: '',
       ended: 0,
-      summary: 'This mockumentary follows the everyday lives of the manager and the employees he manages.',
-      premiered: '2005-03-24',
-      language: 'English'
+      summary: '',
+      premiered: '',
+      language: ''
     }
   }
 
   ngOnInit(): void {
+    this.showService.getShowData('Girls').
+    subscribe (data => this.show = data)
   }
 
 }
