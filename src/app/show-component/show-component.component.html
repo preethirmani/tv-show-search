@@ -1,17 +1,44 @@
 <!--<p>show-component works!</p>-->
-<div>
-    <div>
-        <span>{{show.id}}, {{show.title}}</span> 
-        <br>
-        <span>{{show.genres}}, {{show.rating}}, {{show.status}}</span> 
-        <br>
-        <span>{{show.ended}}, {{show.premiered}}, {{show.language}}</span> 
-        <br>
+<div class="row show-details-container">
+    <div class="col-sm-4">
+        <div class="card">
+            <img class="card-img img-fluid" style="height: 28rem;" [src]='show.img' alt="" />
+        </div>
     </div>
-    <div>
-        <img [src]='show.img'>
+    <div class="col-sm-8">
+        <div class="card text-white content">
+            <div class="card-body">
+                <h1 class="card-title">{{show.title}}</h1>
+                <p class="card-text" [innerHTML]=show.summary></p>
+                <div wrapper-box>
+                    <div class="show-details">
+                        <label class='genre-label'>Genre </label>
+                        <span>{{show.genres}}</span>
+                    </div>
+                    <div class="show-details">
+                        <label class="language-label">Language </label>
+                        <span>{{show.language}}</span>
+                    </div>
+                    
+                    <div class="show-details">
+                        <label class="premeried-label">Premeried </label>
+                        <span>{{show.premiered | date: 'mediumDate'}}</span>
+                    </div>
+
+                    <div class="show-details">
+                        <label class="ended-label">Ended </label>
+                        <span>{{show.ended | date: 'mediumDate'}}</span>
+                    </div>
+                    
+                    <div class="show-details">
+                        <label class="rating-label">Rating </label>
+                        <span>{{show.rating}}</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </div>
-    <div>
-        {{show.summary}}
-    </div>
+ 
 </div>

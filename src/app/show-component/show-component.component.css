@@ -1,0 +1,49 @@
+.row {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+
+
+h1 {
+  text-align: center;
+}
+
+.content {
+  background-color: #131b21;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.show-details {
+  font-size: small;
+}
+
+
+.genre-label {
+  margin-right: 56px;
+}
+
+.language-label {
+  margin-right: 34px;
+
+}
+
+.premeried-label {
+  margin-right: 32px;
+}
+
+.ended-label {
+  margin-right: 55px;
+}
+
+.wrapper-box {
+  border: 2px solid white;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.rating-label {
+  margin-right: 55px;
+}
+

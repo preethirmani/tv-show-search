@@ -5,7 +5,7 @@ export interface ITvshow {
   genres: string[],
   rating: number,
   status: string,
-  ended: number,
+  ended: string,
   summary: string, 
   premiered: string, 
   language: string

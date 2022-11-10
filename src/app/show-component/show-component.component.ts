@@ -17,7 +17,7 @@ export class ShowComponentComponent implements OnInit {
       genres: [''],
       rating: 0,
       status: '',
-      ended: 0,
+      ended: '',
       summary: '',
       premiered: '',
       language: ''
