@@ -21,7 +21,11 @@ export class AppComponent {
     ended: '',
     summary: '', 
     premiered: '', 
-    language: ''
+    language: '',
+    cast1: '',
+    cast2: '',
+    cast3: '',
+    seasons:[]
   }
   constructor(private showService: ShowService) {}
 

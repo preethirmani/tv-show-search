@@ -18,13 +18,22 @@ export class ShowComponentComponent implements OnInit {
       ended: '',
       summary: '',
       premiered: '',
-      language: ''
+      language: '',
+      cast1: '',
+      cast2: '',
+      cast3: '',
+      seasons:[]
+
     }
   constructor(private showService: ShowService) { 
     
   }
 
   ngOnInit(): void {
+    
+  }
+
+  seasonHandler(event:any) {
     
   }
 

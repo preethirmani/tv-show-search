@@ -14,6 +14,10 @@ export interface IShowInfoData {
   image : {
     original: string
   },
-  summary : string
+  summary : string,
+  _embedded:{
+    cast:[{person: {name: string}},{person: {name: string}},{person: {name: string}}],
+    seasons:Array<{id:number}>
+  }
 
 }

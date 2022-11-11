@@ -8,7 +8,11 @@ export interface ITvshow {
   ended: string,
   summary: string, 
   premiered: string, 
-  language: string
+  language: string,
+  cast1: string,
+  cast2: string,
+  cast3: string,
+  seasons: any[]
   
 }
 
